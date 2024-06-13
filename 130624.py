@@ -26,6 +26,89 @@ print(A)
 display()
 print(A)
 '''
+'''
+A=30
+def display():
+    A=30
+    print(A)
+print(A)
+display()
+print(A)
+'''
+'''
+A=30
+def display():
+    global A
+    A=50
+    print(A)
+print(A)
+display()
+print(A)
+'''
+'''
+B=30
+def display(x):
+    global a
+    a=a+x
+    return a
+
+a=20
+b=5
+display(b)
+print(a)
+'''
+
+'''
+a=10
+y=5
+def myfun():
+    a=2
+    y=a
+    print(y,a)
+
+myfun()
+print(y,a)
+'''
+
+'''
+a=10
+y=5
+def myfun():
+    y=a
+    a=2
+    print(y,a)
+
+myfun()
+print(y,a)
+'''
+
+'''
+a=10
+y=5
+def myfun():
+    global a
+    y=a
+    a=2
+    print(y,a)
+
+myfun()
+print(y,a)
+'''
+
+'''
+a=10
+y=5
+def myfun():
+    global a
+    a=2
+    y=a
+    print(y,a)
+
+myfun()
+print(y,a)
+'''
+
+
 
 
     

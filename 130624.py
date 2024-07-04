@@ -58,22 +58,35 @@ display(b)
 print(a)
 '''
 
+
+##a=10
+##y=5
+##def myfun():
+##    a=2
+##    y=a
+##    print(y,a)
+##
+##myfun()
+##print(y,a)
+
+
+
+##a=10
+##y=5
+##def myfun():
+##    global a
+##    y=a
+##    a=2
+##    print(y,a)
+##
+##myfun()
+##print(y,a)
+
 '''
 a=10
 y=5
 def myfun():
-    a=2
-    y=a
-    print(y,a)
-
-myfun()
-print(y,a)
-'''
-
-'''
-a=10
-y=5
-def myfun():
+    global a
     y=a
     a=2
     print(y,a)
@@ -87,19 +100,6 @@ a=10
 y=5
 def myfun():
     global a
-    y=a
-    a=2
-    print(y,a)
-
-myfun()
-print(y,a)
-'''
-
-'''
-a=10
-y=5
-def myfun():
-    global a
     a=2
     y=a
     print(y,a)
@@ -108,6 +108,12 @@ myfun()
 print(y,a)
 '''
 
+##a=1
+##def display():
+##    return a
+##print(a)
+##print(display())
+##print(a)
 
 
 

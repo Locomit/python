@@ -83,23 +83,152 @@
 
 #static variable can change but instance variable can be updated
 
-class A:
-    a=10
-    b=20
+##class A:
+##    a=10
+##    b=20
+##
+##    def demo(s):
+##        s.a= s.a+1
+##        A.b= A.b+1
+##
+##        print(s.a, A.b)
+##x=A()
+##x.demo()
+##
+##y=A()
+##y.demo()
+##
+##z=A()
+##z.demo()
+##
 
-    def demo(s):
-        s.a= s.a+1
-        A.b= A.b+1
 
-        print(s.a, A.b)
-x=A()
-x.demo()
+# Constructor: __init__ method runs automatically when object is created which is used to initialize the instance object
 
-y=A()
-y.demo()
+##class A:
+##    def __init__(s):
+##        print('Namita')
+##        s.id=10
+##        s.name='Robin'
+##        s.salary=50000
+##
+##    def display(s):
+##        print('id is: ',s.id)
+##        print('name is: ',s.name)
+##        print('Salary is: ',s.salary)
+##
+##a=A()
+##a.display()
 
-z=A()
-z.demo()
+##class A:
+##    def __init__(s):
+##        s.id=int(input('Enter Id: '))
+##        s.name=input('Enter the name: ')
+##
+##    def display(s):
+##        print('Your id is ',s.id)
+##        print('Your name is ',s.name)
+##
+##
+##a=A()
+##a.display()
+
+##class A:
+##    def __init__(s):
+##        s.id=int(input('Enter id: '))
+##        s.name=input('Enter your name: ')
+##        s.salary=int(input('Enter yout salary:'))
+##
+##    def display(s):
+##        print(f'id is {s.id} name is {s.name} and salary is {s.salary}.')
+##
+##a=A()
+##a.display()
+
+
+##class A:
+##    def __init__(s,name,age,salary):
+##        s.name=name
+##        s.age=age
+##        s.salary=salary
+##
+##    def display(s):
+##        print(s.name, s.age, s.salary)
+##
+##a=A('Sanji',28,680000)
+##a.display()
+
+
+
+##class A:
+##    def __init__(s,name,age,salary):
+##        s.name=name
+##        s.age=age
+##        s.salary=salary
+##
+##    def display(s):
+##        print(s.name, s.age, s.salary)
+##
+##    def __str__(s):
+##        return s.name+' '+str(s.age)+' '+str(s.salary)
+##
+##a=A('Robin', 24,800000)
+##a.display()
+##
+##print(a)
+
+# __str__ : str method is used when method willl get printed
+
+
+##class A:
+##    def display(s,name,age):
+##        s.email='n@gmail.com'
+##        print(name,age,s.email)
+##        print('python Developer')
+##
+##    def show(s):
+##        print(s.email)
+##        s.display('Robin',24)
+##        print('java developer')
+##
+##    def demo(k):
+##        print(k.email)
+##        print(a.email)
+##
+##a=A()
+##a.display('Zoro',27)
+##a.show()
+##a.demo()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

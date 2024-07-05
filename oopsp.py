@@ -177,7 +177,7 @@
 ##
 ##print(a)
 
-# __str__ : str method is used when method willl get printed
+# __str__ : str method is used when method will get printed
 
 
 ##class A:
@@ -201,9 +201,28 @@
 ##a.demo()
 
 
+#destructor: it is a member method of a class it delete the memory of object it can be call with object name is __ del__
+#it also called as a garbage collector a program to delete reference it runs automatically.
 
-
-
+##class A:
+##    def __init__(self):
+##        self.name='Zoro'
+##        print('Python developer')
+##
+##    def show(self):
+##        print('Java developer')
+##
+##    def __del__(self):
+##        print('Object is deleted')
+##
+##a=A()
+##a.show()
+##
+####del a
+####a.show()
+##
+##c=A()
+##c.show()
 
 
 

@@ -120,6 +120,7 @@
 ##a=A()
 ##a.display()
 
+
 ##class A:
 ##    def __init__(s):
 ##        s.id=int(input('Enter Id: '))
@@ -159,6 +160,7 @@
 ##a.display()
 
 
+# __str__ : str method is used when method will get printed.
 
 ##class A:
 ##    def __init__(s,name,age,salary):
@@ -177,7 +179,7 @@
 ##
 ##print(a)
 
-# __str__ : str method is used when method will get printed
+
 
 
 ##class A:
@@ -225,7 +227,79 @@
 ##c.show()
 
 
+#Inheritance : one class can inherit the properties and method of another class this process is known as inheritence
 
+##class A:
+##    a=10
+##
+##    def show(s):
+##        print('Python Developer')
+##
+##class B(A):
+##    b=20
+##    def display(s):
+##        print(s.b, c.b, c.a, B.a, B.b)
+##        print('Java developer')
+##
+##c=B()
+##c.display()
+
+
+# Types of inheritance
+##single level
+##multilevel
+##hirarchical
+##multiple
+##Hybrid
+
+#2)the inheritance in which a class can be derived from another derived class is known as multilevel inheritance
+
+##class A:
+##    a=10
+##    def show(s):
+##        print('Grand parent method called')
+##
+##class B(A):
+##    b=20
+##    def display(s):
+##        print('parent method called')
+##
+##class C(B):
+##    c=30
+##    def data(s):
+##        print(s.a+s.b+s.c)
+##        print('child method called')
+##
+##x=C()
+##x.data()
+
+#3)
+
+
+##Polymorphism
+##polymorphism means many form
+##an entity can workk in multiple role this capability is called as polymorphism
+##1. function overriding
+##2. function overloading
+##
+##1. In function overriding we can declare a function in base calss and derived calss with same name and same parameter
+##it occures when one class is inherit from another class
+
+##class A:
+##    def display(self):
+##        print('python developer')
+##
+##class B(A):
+##    def display(self):
+##        print('Java developer')
+##
+##ob=B()
+##ob.display()
+
+##function overloading
+##more than one function with same name defined in same class and call with different parameter
+##this process is known as method overloading.
+##but python does not support method overloading.
 
 
 

@@ -299,7 +299,106 @@
 ##function overloading
 ##more than one function with same name defined in same class and call with different parameter
 ##this process is known as method overloading.
-##but python does not support method overloading.
+##but python does not support method overloading. it support in java
+
+##class A:
+##    def show(self):
+##        print('hii')
+##    def show(self,x,y):
+##        print('bye')
+##    def show(self):
+##        print('helllooooo')
+##
+##a=A()
+##
+##a.show()
+##a.show(10)
+##a.show(10,20)
+
+
+##class A:
+##    def show(self,x,y):
+##        print(x+y)
+##a=A()
+##a.show(10,30)
+
+##class A:
+##    def show(self, a=None, b=None, c=None):
+##        if(a!=None and b!=None and c!=None):
+##            print(a+b+c)
+##        elif(a!=None and b!=None):
+##            print(a+b)
+##        else:
+##            print(a)
+##
+##d=A()
+##d.show(10)
+##d.show(2,3)
+##d.show(10,20,30)
+
+#Possibility for overloading in python
+
+#Handling
+
+##print('Thane')
+##try:
+##    raise InvalidAgeError()
+##except:
+##    print('exception handelled')
+##print('Mumbai')
+##
+
+##class InvalidAgeError(Exception):
+##    pass
+##print('thane')
+##try:
+##    raise InvalidAgeError()
+##except InvalidAgeError as e:
+##    print('exception Handled')
+##print('Mumbai')
+
+##class InvalidAgeError(Exception):
+##    def __str__(self):
+##        return 'Invalid Age Error Detected'
+##print('Thane')
+##try:
+##    raise InvalidAgeError()
+##except InvalidAgeError as e:
+##    print(e)
+##print('mumbai')
+
+##class InvalidAgeError(Exception):
+##    def __str__(self):
+##        return 'Invalid age detected'
+##
+##age=int(input('Enter your age:'))
+##if(age>=18):
+##    print('You can vote')
+##else:
+##    try:
+##        raise InvalidAgeError()
+##
+##    except InvalidAgeError as e:
+##        print(e)
+##
+
+##class A:
+##    def __init__(self,name,age):
+##        print('python developer')
+##        print(name,age)
+##    def show(self):
+##        print('Hii')
+##
+##class B(A):
+##    def __init__(self,name,age):
+##        super().__init__('raj',32)
+##        print('java developer')
+##        print(name,age)
+##    def display(self):
+##        print('Hello')
+##
+##b=B('Rajesh',31)
+##    
 
 
 
